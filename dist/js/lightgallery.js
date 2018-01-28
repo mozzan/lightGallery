@@ -1344,6 +1344,7 @@
 
     $.fn.lightGallery = function(options) {
         return this.each(function() {
+	    debugger;
             if (!$.data(this, 'lightGallery')) {
                 $.data(this, 'lightGallery', new Plugin(this, options));
             } else {
